@@ -13,7 +13,7 @@ namespace API.Controllers
             _context = context;
         }
 
-        [HttpGet] //api/activities testar
+        [HttpGet] //api/activities 
         public async Task<ActionResult<List<Activity>>> GetActivities()
         {
             return await _context.Activities.ToListAsync();
